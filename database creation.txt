@@ -1,0 +1,14 @@
+CREATE DATABASE login;
+
+CREATE TABLE users (
+    ID int NOT NULL,
+    Username varchar(50),
+    Password varchar(50),
+    Role varchar(50)
+)
+
+INSERT INTO users (ID, Username, Password, Role)
+VALUES ('1','admin@gmail.com','admin@123','Admin')
+
+INSERT INTO users (ID, Username, Password, Role)
+VALUES ('2','user@gmail.com','user@123','User')
