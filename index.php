@@ -1,3 +1,7 @@
+<?php
+	include "code.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +30,7 @@ body {
 			<div class="col-lg-5 bg-light mt-5 px-0">
 				<h3 class="text-center text-light bg-danger p-3">Login Here</h3>
 
-				<form action="" method="POST">
+				<form action="code.php" method="POST">
 					<div class="form-group">
 						<input type="text" name="username" class="form-control form-control-lg" placeholder="username" required>
 						
@@ -36,7 +40,9 @@ body {
 						
 					</div>
 					
-					
+					<h5 class="text-center" style="color: red;">
+						<?php echo $message; ?>
+					</h5>
 					
 					<div class="form-group">
 						<input type="submit" name="btnLogin" value="submit" class="btn btn-danger btn-block">

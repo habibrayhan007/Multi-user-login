@@ -1,3 +1,17 @@
+<?php
+session_start();
+if (isset($_SESSION['role'])) 
+{
+	if ($_SESSION['role'] != 'User') 
+	{
+		header('Location: index.php');
+	}
+}
+else
+{
+	header('Location: index.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +23,7 @@
 <div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-5 bg-light mt-5 px-0">
-				<h3 class="text-center  p-4">Welcome User</h3>
+				<h3 class="text-center  p-4">Welcome <?php echo $_SESSION['User']; ?></h3>
 
 				
 				
