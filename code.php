@@ -3,8 +3,7 @@ session_start();
 
 require_once "connection.php";
 
-$message = "";
-$role="";
+
 
 if (isset($_POST["btnLogin"])) 
 {
@@ -35,8 +34,9 @@ if (isset($_POST["btnLogin"]))
 	}
 	else
 	{
-		
-		header("location : index.php");
+		$msg='Wrong information!';
+		header("Location: index.php?$msg");
+
 	}
 
 }
