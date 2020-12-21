@@ -40,9 +40,7 @@ body {
 						
 					</div>
 					
-					<h5 class="text-center" style="color: red;">
-						<?php echo $message; ?>
-					</h5>
+					
 					
 					<div class="form-group">
 						<input type="submit" name="btnLogin" value="submit" class="btn btn-danger btn-block">
